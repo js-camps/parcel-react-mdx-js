@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-mdx": "2.12.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "parcel": {
+    "transformers": {
+      "*.mdx": [
+        "@parcel/transformer-mdx"
+      ]
+    }
+  }
+}
